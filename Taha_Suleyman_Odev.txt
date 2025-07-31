@@ -1,0 +1,104 @@
+Ödev 1;Yarı çapı girilen dairenin alanını hesaplayıp yazdıran programın algoritması.
+
+1 Adım ; Kullanıcıdan dairenin yarıçapını (r) girmesini iste
+         r = float(input("Dairenin yarıçapını girin: ")
+
+2 Adım ; Girilen yarıçapı oku ve bir değişkende sakla (r)
+         yarıçap = r
+
+3 Adım ; Dairenin alanını hesapla: 
+         Alan = π * r * r
+
+4 Adım ; Hesaplanan alanı ekrana yazdır
+         print("Dairenin alanı:", alan)
+
+
+Ödev 2; Sayının pozitif, negatif yada sıfır olduğunu bulan algoritma.
+
+1 Adım  ; Kullanıcıdan bir sayı girilmesini iste
+
+	  sayi = float(input("Bir sayı girin: "))
+
+2 Adım  ; Girilen sayıyı oku ve bir değişkende sakla (örneğin sayi)
+
+3 Adım  ; Eğer sayi > 0 ise: "Sayı pozitiftir" yazdır
+	  
+          if sayi > 0: 
+          print("Sayı pozitiftir.")
+
+4 Adım  ; Değilse, eğer sayi < 0 ise: "Sayı negatiftir" yazdır
+
+	  elif sayi < 0: 
+          print("Sayı negatiftir.")
+
+5 Adım  ; Aksi halde (yani sayi == 0 ise): "Sayı sıfırdır" yazdır
+	
+         else: 
+         print("Sayı sıfırdır.")
+
+
+Ödev 3 ; Girilen iki sayının en büyük ortak bölenini bulan algoritması
+
+1 Adım  ; Kullanıcıdan iki sayı al (sayı1, sayı2)
+
+	 sayi1 = int(input("1. sayıyı girin: "))
+	 sayi2 = int(input("2. sayıyı girin: "))
+
+2 Adım  ; Küçük olan sayıyı bul (min = küçük olan)
+
+	 min_sayi = min(sayi1, sayi2)
+
+
+3 Adım  ; En büyük ortak böleni bulmak için döngü
+          Eğer her iki sayı da i sayısına tam bölünüyorsa: EBOB = i
+
+	  for i in range(min_sayi, 0, -1):
+          if sayi1 % i == 0 and sayi2 % i == 0:
+          ebob = i
+          break
+
+4 Adım  ; Sonucu Yazdır
+
+	 print("EBOB:", ebob)
+
+Ödev4; Girilen iki sayının en küçük ortak katını bulan algoritma
+
+1 Adım  ; Kullanıcıdan iki sayı al (sayı1, sayı2)
+
+	 sayi1 = int(input("1. sayıyı girin: "))
+	 sayi2 = int(input("2. sayıyı girin: "))
+
+2 Adım  ; Büyük olan sayıyı bul (max = büyük olan)
+
+         maks = max(sayi1, sayi2)
+	 
+3 Adım  ; En küçük ortak katlarını bulmak için döngü
+
+          Eğer i hem sayı1’e hem de sayı2’ye tam bölünüyorsa EKOK = i
+
+	  i = maks
+		while True:
+	        if i % sayi1 == 0 and i % sayi2 == 0:
+        	ekok = i
+        	break
+    		i += 1
+
+4 Adım  ; Sonucu Yazdır
+
+	 print("EKOK:", ekok)
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
